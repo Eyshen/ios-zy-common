@@ -1,0 +1,14 @@
+source 'https://github.com/CocoaPods/Specs.git'
+source 'https://github.com/Eyshen/ios-zy-framework-cocoapods-specs.git'
+platform :ios, '7.0'
+
+target :'ZYCommon-master' do
+
+pod 'ZYJSON'
+pod 'ZYLoggingCocoaLumberjack'
+#pod 'ZYUIRoutable/API'
+pod 'KVOController'
+pod 'Masonry', '1.0.0'
+pod 'Reachability', '3.2'
+
+end

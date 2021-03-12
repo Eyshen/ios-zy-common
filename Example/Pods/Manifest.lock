@@ -1,0 +1,46 @@
+PODS:
+  - CocoaLumberjack (3.4.2):
+    - CocoaLumberjack/Default (= 3.4.2)
+    - CocoaLumberjack/Extensions (= 3.4.2)
+  - CocoaLumberjack/Default (3.4.2)
+  - CocoaLumberjack/Extensions (3.4.2):
+    - CocoaLumberjack/Default
+  - KVOController (1.2.0)
+  - Masonry (1.0.0)
+  - Reachability (3.2)
+  - ZYJSON (1.0.1)
+  - ZYLoggingAPI (1.0.0)
+  - ZYLoggingCocoaLumberjack (1.0.0):
+    - CocoaLumberjack (~> 3.4)
+    - ZYLoggingAPI
+
+DEPENDENCIES:
+  - KVOController
+  - Masonry (= 1.0.0)
+  - Reachability (= 3.2)
+  - ZYJSON
+  - ZYLoggingCocoaLumberjack
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - CocoaLumberjack
+    - KVOController
+    - Masonry
+    - Reachability
+  https://github.com/Eyshen/ios-zy-framework-cocoapods-specs.git:
+    - ZYJSON
+    - ZYLoggingAPI
+    - ZYLoggingCocoaLumberjack
+
+SPEC CHECKSUMS:
+  CocoaLumberjack: db7cc9e464771f12054c22ff6947c5a58d43a0fd
+  KVOController: d72ace34afea42468329623b3379ab3cd1d286b6
+  Masonry: b529bb169217897b6354d4b56b1fada6d475b13d
+  Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
+  ZYJSON: fcde6a7a9ee20075ad37502cf5ccbc7da46d9527
+  ZYLoggingAPI: 3ce3e3806410c43cc64e2398d4d562abdebfb9a6
+  ZYLoggingCocoaLumberjack: 8fd953b880709525ea62f824cdf6fe0c685a7c2f
+
+PODFILE CHECKSUM: cba5bdf88d793973b46d4b9ebb79e9827b888666
+
+COCOAPODS: 1.9.1
