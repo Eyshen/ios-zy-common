@@ -1,9 +1,16 @@
 //
 //  RootViewController.m
-//  WJCommon-master
+//     _______________      __
+//    /\______   /  \ \    / /
+//    \/___  /  /    \ \  / /
+//        / /  /      \ \/ /
+//       / /  /        \/ /
+//      / /  /______   / /
+//     / /__________\ / /
+//    /_____________/ \/
 //
-//  Created by 吴云海 on 16/5/23.
-//  Copyright © 2016年 WJ. All rights reserved.
+//  Created by 张一 on 15/8/21.
+//  Copyright (c) 2015年 ZY. All rights reserved.
 //
 
 #import "RootViewController.h"
@@ -14,14 +21,14 @@
 
 @implementation RootViewController
 
--(void)wj_vcInit {
-    [super wj_vcInit];
+-(void)zy_vcInit {
+    [super zy_vcInit];
     self.dataSources = @[
   @{@"title":@"CollectionView Demo",@"target":@"CollectionViewDemo"},
-  @{@"title":@"WJActiveSheet Demo",@"target":@"WJActiveSheetDemo"},
-  @{@"title":@"WJAlertView Demo",@"target":@"WJAlertViewDemo"},
-  @{@"title":@"WJLineView Demo",@"target":@"WJLineViewController"},
-  @{@"title":@"WJVerticalButton Demo",@"target":@"WJButtonViewController"}];
+  @{@"title":@"ZYActiveSheet Demo",@"target":@"ZYActiveSheetDemo"},
+  @{@"title":@"ZYAlertView Demo",@"target":@"ZYAlertViewDemo"},
+  @{@"title":@"ZYLineView Demo",@"target":@"ZYLineViewController"},
+  @{@"title":@"ZYVerticalButton Demo",@"target":@"ZYButtonViewController"}];
     
     
 }
@@ -32,8 +39,8 @@
     NSDictionary *d = _dataSources[indexPath.row];
     NSString *target = d[@"target"];
     Class targetClazz = NSClassFromString(target);
-    BaseWJViewController *vc = [targetClazz wj_instance];
-    [vc setWjNavTitle:d[@"title"]];
+    BaseZYViewController *vc = [targetClazz zy_instance];
+    [vc setZyNavTitle:d[@"title"]];
     [self.navigationController pushViewController:vc animated:YES];
 }
 
@@ -59,14 +66,19 @@
 
 -(void)viewDidLoad {
     [super viewDidLoad];
-    self.wjNavTitle = @"WJCommon Demos";
+    self.zyNavTitle = @"ZYCommon Demos";
+    
+    [self refreshRunloop];
+}
+-(void)refreshRunloop{
+    
 }
 
 -(UIRectEdge)edgesForExtendedLayout {
     return UIRectEdgeNone;
 }
 
--(BOOL)wj_existNavigationBar {
+-(BOOL)zy_existNavigationBar {
     return YES;
 }
 

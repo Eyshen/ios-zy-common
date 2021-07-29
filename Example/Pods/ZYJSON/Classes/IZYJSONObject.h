@@ -57,7 +57,7 @@
 +(NSSet*) zyCustomParsePropertys;
 
 /**
- *  自定义处理属性（只有wjCustomParsePropertys返回有属性需要自定义处理时才触发）
+ *  自定义处理属性（只有zyCustomParsePropertys返回有属性需要自定义处理时才触发）
  *
  *  @param property 属性名称
  *  @param object   对应值

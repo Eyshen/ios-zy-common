@@ -1,9 +1,9 @@
 //
 //  TextActionSheetContentView.m
-//  WJCommon-master
+//  ZYCommon-master
 //
-//  Created by 吴云海 on 16/6/15.
-//  Copyright © 2016年 WJ. All rights reserved.
+//  Created by zhangyi on 16/6/15.
+//  Copyright © 2016年 ZY. All rights reserved.
 //
 
 #import "TextActionSheetContentView.h"
@@ -19,8 +19,8 @@
 
 @implementation TextActionSheetContentView
 
--(void)wj_loadSubViews {
-    [super wj_loadSubViews];
+-(void)zy_loadSubViews {
+    [super zy_loadSubViews];
     [self setBackgroundColor:[UIColor whiteColor]];
     if (!_button) {
         self.h = 300;
@@ -63,7 +63,7 @@
     
 }
 
-#pragma mark IWJActionSheetContentView
+#pragma mark IZYActionSheetContentView
 - (CGFloat)contentViewHeight {
     if (self.h == 0) {
         return 300.0f;

@@ -140,7 +140,7 @@ static NSDateFormatter *zyDateFormat = nil;
             break;
         default:
             {
-                returnValue = value; //WJObjectTypeObject  对象类型如果不是实现了IWJJSONObject 协议则忽略转换
+                returnValue = value; //ZYObjectTypeObject  对象类型如果不是实现了IZYJSONObject 协议则忽略转换
             }
             break;
     }

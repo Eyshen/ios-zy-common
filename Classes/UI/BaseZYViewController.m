@@ -45,7 +45,7 @@ NSString * const ZYViewControllerTitleKey = @"ZYViewControllerTitleKey";
     
     NSArray *viewModels = [self zy_viewModels];
     for (id<IZYViewModel> vm in viewModels) {
-        [vm setZYActive:NO];
+        [vm setZyActive:NO];
         [vm zy_viewWillDisappear];
     }
 }
@@ -69,7 +69,7 @@ NSString * const ZYViewControllerTitleKey = @"ZYViewControllerTitleKey";
     }
     NSArray *viewModels = [self zy_viewModels];
     for (id<IZYViewModel> vm in viewModels) {
-        [vm setZYActive:YES];
+        [vm setZyActive:YES];
         [vm zy_viewWillAppear];
     }
     if (_zyLoadingView) [self.view bringSubviewToFront:_zyLoadingView];

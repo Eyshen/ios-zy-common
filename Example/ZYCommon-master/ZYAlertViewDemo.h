@@ -1,13 +1,13 @@
 //
-//  WJAlertViewDemo.h
-//  WJCommon-master
+//  ZYAlertViewDemo.h
+//  ZYCommon-master
 //
-//  Created by 吴云海 on 16/6/16.
-//  Copyright © 2016年 WJ. All rights reserved.
+//  Created by zhangyi on 16/6/16.
+//  Copyright © 2016年 ZY. All rights reserved.
 //
 
-#import "BaseWJViewController.h"
+#import "BaseZYViewController.h"
 
-@interface WJAlertViewDemo : BaseWJViewController
+@interface ZYAlertViewDemo : BaseZYViewController
 
 @end

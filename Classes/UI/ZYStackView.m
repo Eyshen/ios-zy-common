@@ -46,7 +46,7 @@
 -(void)layoutSubviews {
     [super layoutSubviews];
     NSArray *a = [self subviews];
-    if (_axis == zyStackViewAxisHorizontal) {
+    if (_axis == ZYStackViewAxisHorizontal) {
         CGFloat w = self.bounds.size.width / [a count];
         for (int i=0; i<[a count]; i++) {
             UIView *v = a[i];

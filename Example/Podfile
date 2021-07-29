@@ -4,11 +4,13 @@ platform :ios, '7.0'
 
 target :'ZYCommon-master' do
 
-pod 'ZYJSON'
-pod 'ZYLoggingCocoaLumberjack'
 #pod 'ZYUIRoutable/API'
-pod 'KVOController'
-pod 'Masonry', '1.0.0'
+#pod 'KVOController'
+pod 'ZYLoggingCocoaLumberjack'
+pod 'Masonry','~> 1.0'
 pod 'Reachability', '3.2'
+pod 'ZYConfig'
+pod 'ZYLoggingAPI'
+pod 'ZYJSON'
 
 end

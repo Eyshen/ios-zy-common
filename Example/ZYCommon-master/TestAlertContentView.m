@@ -1,13 +1,13 @@
 //
 //  TestAlertContentView.m
-//  WJCommon-master
+//  ZYCommon-master
 //
-//  Created by 吴云海 on 16/6/16.
-//  Copyright © 2016年 WJ. All rights reserved.
+//  Created by zhangyi on 16/6/16.
+//  Copyright © 2016年 ZY. All rights reserved.
 //
 
 #import "TestAlertContentView.h"
-#import "WJAlertView.h"
+#import "ZYAlertView.h"
 
 @interface TestAlertContentView ()
 
@@ -21,7 +21,7 @@
     [self.containerView close:NO];
 }
 
-#pragma mark IWJAlertContentView
+#pragma mark IZYAlertContentView
 - (CGSize)contentViewSize {
     return CGSizeMake(280.0f, 200.0f);
 }
@@ -38,8 +38,8 @@
     return -100.0f;
 }
 
-- (WJAlertViewAnimationType) animationType {
-    return WJAlertViewAnimationTypeNone;
+- (ZYAlertViewAnimationType) animationType {
+    return ZYAlertViewAnimationTypeNone;
 }
 
 @end

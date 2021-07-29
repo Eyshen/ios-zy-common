@@ -1,16 +1,16 @@
 //
 //  TextActionSheetContentView.h
-//  WJCommon-master
+//  ZYCommon-master
 //
-//  Created by 吴云海 on 16/6/15.
-//  Copyright © 2016年 WJ. All rights reserved.
+//  Created by zhangyi on 16/6/15.
+//  Copyright © 2016年 ZY. All rights reserved.
 //
 
-#import "BaseWJView.h"
-#import "WJActionSheetView.h"
+#import "BaseZYView.h"
+#import "ZYActionSheetView.h"
 
-@interface TextActionSheetContentView : BaseWJView<IWJActionSheetContentView>
+@interface TextActionSheetContentView : BaseZYView<IZYActionSheetContentView>
 
-@property(nonatomic, weak) UIView<IWJActionSheetView> *containerView;
+@property(nonatomic, weak) UIView<IZYActionSheetView> *containerView;
 
 @end

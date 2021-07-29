@@ -1,13 +1,20 @@
 //
-//  WJLineViewController.h
-//  WJCommon-master
+//  ZYLineViewController.h
+//     _______________      __
+//    /\______   /  \ \    / /
+//    \/___  /  /    \ \  / /
+//        / /  /      \ \/ /
+//       / /  /        \/ /
+//      / /  /______   / /
+//     / /__________\ / /
+//    /_____________/ \/
 //
-//  Created by 吴云海 on 16/9/5.
-//  Copyright © 2016年 WJ. All rights reserved.
+//  Created by Eason.zhangyi on 15/12/16.
+//  Copyright © 2016年 ZY. All rights reserved.
 //
 
-#import "BaseWJViewController.h"
+#import "BaseZYViewController.h"
 
-@interface WJLineViewController : BaseWJViewController
+@interface ZYLineViewController : BaseZYViewController
 
 @end

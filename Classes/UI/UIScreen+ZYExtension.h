@@ -25,7 +25,7 @@
 #define ZY_IS_IPHONEX               ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1125, 2436), [[UIScreen mainScreen] currentMode].size) : NO)
 
 /**
- *  @author 吴云海
+ *  @author 张一
  *
  *  UIScreen 扩展
  */

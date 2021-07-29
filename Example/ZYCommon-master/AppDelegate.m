@@ -17,9 +17,9 @@
 #import "Gender.h"
 #import "CocoaLumberjack.h"
 #import "RootViewController.h"
-#import "BaseWJNavigationController.h"
-#import "UIDevice+WJExtension.h"
-#import "WJVersionUtils.h"
+#import "BaseZYNavigationController.h"
+#import "UIDevice+ZYExtension.h"
+#import "ZYVersionUtils.h"
 
 @interface AppDelegate ()
 
@@ -36,20 +36,20 @@
     [self.window setBackgroundColor:[UIColor whiteColor]];
     NSString *version = @"8.-1.bate";
     
-    if ([WJVersionUtils currentSystemVersionGreaterThan:version]) {
+    if ([ZYVersionUtils currentSystemVersionGreaterThan:version]) {
         NSLog(@"%@ > %@",[UIDevice osVersion], version);
     } else {
         NSLog(@"%@ <= %@",[UIDevice osVersion], version);
     }
     
 //    NSLog(@"CURRENT VERSION:%@",[UIDevice osVersion]);
-//    if (WJ_OS_VERSION_LESS_THAN(version)) {
+//    if (ZY_OS_VERSION_LESS_THAN(version)) {
 //        NSLog(@"%@ < %@",osVersion, version);
 //    } else {
 //        NSLog(@"%@ >= %@",osVersion, version);
 //    }
 //    
-//    if (WJ_OS_VERSION_GREATER_THAN(version)) {
+//    if (ZY_OS_VERSION_GREATER_THAN(version)) {
 //        NSLog(@"%@ > %@",osVersion, version);
 //    } else {
 //        NSLog(@"%@ <= %@",osVersion, version);
@@ -59,7 +59,7 @@
     [DDLog addLogger:[DDTTYLogger sharedInstance]];
     [DDLog addLogger:[DDASLLogger sharedInstance]];
     
-    [self.window setRootViewController:[BaseWJNavigationController wj_instance:[RootViewController wj_instance]]];
+    [self.window setRootViewController:[BaseZYNavigationController zy_instance:[RootViewController zy_instance]]];
     [self.window makeKeyAndVisible];
     return YES;
 }

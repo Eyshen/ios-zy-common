@@ -1,13 +1,20 @@
 //
 //  RootViewController.h
-//  WJCommon-master
+//     _______________      __
+//    /\______   /  \ \    / /
+//    \/___  /  /    \ \  / /
+//        / /  /      \ \/ /
+//       / /  /        \/ /
+//      / /  /______   / /
+//     / /__________\ / /
+//    /_____________/ \/
 //
-//  Created by 吴云海 on 16/5/23.
-//  Copyright © 2016年 WJ. All rights reserved.
+//  Created by 张一 on 15/8/21.
+//  Copyright (c) 2015年 ZY. All rights reserved.
 //
 
-#import "BaseWJTableViewController.h"
+#import "BaseZYTableViewController.h"
 
-@interface RootViewController : BaseWJTableViewController
+@interface RootViewController : BaseZYTableViewController
 
 @end

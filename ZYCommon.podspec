@@ -23,10 +23,16 @@ s.exclude_files = "Example"
 
 s.requires_arc = true
 
-
 s.subspec 'Core' do |core|
     core.source_files = 'Classes/*.{h,m}'
     core.public_header_files = 'Classes/*.h'
+end
+
+s.subspec 'ZYUIRoutableAPI' do |ua|
+    ua.source_files = 'Classes/ZYUIRoutableAPI/*'
+    ua.public_header_files = 'Classes/ZYUIRoutableAPI/*.h'
+
+    ua.dependency 'ZYCommon/Core'
 end
 
 s.subspec 'Utils' do |utils|
@@ -45,9 +51,10 @@ s.subspec 'UI' do |ui|
 
     ui.dependency 'ZYCommon/SwipeBack'
     ui.dependency 'ZYCommon/Core'
+    ui.dependency 'ZYCommon/ZYUIRoutableAPI'
     ui.dependency 'ZYCommon/Utils'
-    ui.dependency 'Masonry', '1.0.1'
-    ui.dependency 'ZYUIRoutable/API'
+    ui.dependency 'Masonry', '~> 1.0'
+    #ui.dependency 'ZYUIRoutable/API'
 end
 
 s.subspec 'NetworkService' do |ns|
@@ -55,11 +62,13 @@ s.subspec 'NetworkService' do |ns|
     ns.public_header_files = 'Classes/NetworkService/*.h'
 
     ns.dependency 'ZYCommon/Core'
-    ns.dependency 'Reachability', '3.2'
+    ns.dependency 'Reachability'
+    # , '3.2'
 end
 
 
-s.dependency "ZYJSON"
-s.dependency "ZYLoggingAPI"
-
+s.dependency 'ZYJSON'  
+s.dependency 'ZYLoggingAPI'  
+s.dependency 'ZYConfig' 
+s.dependency 'ZYLoggingCocoaLumberjack'
 end

@@ -13,9 +13,9 @@
 //  Copyright © 2016年 ZY. All rights reserved.
 //
 
-#import "BaseWJEnum.h"
+#import "BaseZYEnum.h"
 
-@interface Gender : BaseWJEnum
+@interface Gender : BaseZYEnum
 
 +(instancetype) man;
 

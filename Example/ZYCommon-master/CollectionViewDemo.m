@@ -1,9 +1,16 @@
 //
 //  CollectionViewDemo.m
-//  WJCommon-master
+//     _______________      __
+//    /\______   /  \ \    / /
+//    \/___  /  /    \ \  / /
+//        / /  /      \ \/ /
+//       / /  /        \/ /
+//      / /  /______   / /
+//     / /__________\ / /
+//    /_____________/ \/
 //
-//  Created by 吴云海 on 16/5/23.
-//  Copyright © 2016年 WJ. All rights reserved.
+//  Created by 张一 on 15/8/21.
+//  Copyright (c) 2015年 ZY. All rights reserved.
 //
 
 #import "CollectionViewDemo.h"
@@ -92,9 +99,9 @@
 
 -(void) timerExec:(NSTimer*) timer {
     if ([NSThread isMainThread]) {
-        NSLog(@"main");
+        NSLog(@"CollectionView-main");
     } else {
-        NSLog(@"non main");
+        NSLog(@"CollectionView-non main");
     }
     NSIndexPath *indexPath = [self.refCollectionView indexPathForItemAtPoint:CGPointMake(self.refCollectionView.contentOffset.x + self.refCollectionView.bounds.size.width/2, self.refCollectionView.bounds.size.height/2)];
     [self.refCollectionView scrollToItemAtIndexPath:[NSIndexPath indexPathForRow:indexPath.row + 1 inSection:indexPath.section] atScrollPosition:UICollectionViewScrollPositionNone animated:YES];
@@ -115,20 +122,20 @@
     [super viewDidLoad];
     
     
-    self.wjNavigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"<" style:UIBarButtonItemStylePlain target:self action:@selector(leftExec:)];
+    self.zyNavigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"<" style:UIBarButtonItemStylePlain target:self action:@selector(leftExec:)];
     
     if (!_refCollectionView) {
         UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc] init];
-        CGSize size = CGSizeMake(self.wjView.bounds.size.width, 100);
+        CGSize size = CGSizeMake(self.zyView.bounds.size.width, 100);
         [flowLayout setItemSize:size];
         [flowLayout setMinimumLineSpacing:0];
         [flowLayout setMinimumInteritemSpacing:0];
         [flowLayout setScrollDirection:UICollectionViewScrollDirectionHorizontal];
-        UICollectionView *collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 0, self.wjView.bounds.size.width, 100) collectionViewLayout:flowLayout];
+        UICollectionView *collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 0, self.zyView.bounds.size.width, 100) collectionViewLayout:flowLayout];
         [collectionView setPagingEnabled:YES];
         [collectionView setBackgroundColor:[UIColor clearColor]];
         [collectionView setAutoresizingMask:UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleBottomMargin];
-        [self.wjView addSubview:collectionView];
+        [self.zyView addSubview:collectionView];
         _refCollectionView = collectionView;
         [collectionView setDelegate:self];
         [collectionView setDataSource:self];
